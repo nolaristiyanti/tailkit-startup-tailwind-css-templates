@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Kit - Tailwind CSS Template</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-tailkit-base-main : #0b113a;
+            --color-tailkit-base-footer : #090e34;
+            --color-tailkit-button-primary : #4a6cf7;
+            --color-tailkit-button-primary-hover : #3f5ce0;
+            --color-tailkit-button-secondary : #222749;
+            --color-tailkit-card-icon-primary : #101848;
+            --color-tailkit-card-icon-secondary : #222956;
+            --color-tailkit-card-layout : #1D2144;
+            --color-tailkit-input : #242b51;
+        }
+
+        @layer base {
+            a {
+                @apply hover:text-gray-400 active:text-gray-400;
+            }
+        }
+
+        @layer components {
+            .btn-primary {
+                @apply inline-block bg-tailkit-button-primary text-white font-bold rounded-lg hover:bg-tailkit-button-primary-hover hover:scale-105 active:scale-95 transition duration-200;
+            }
+            .btn-secondary {
+                @apply inline-block bg-tailkit-button-secondary text-white font-bold px-8 py-4 rounded-lg hover:brightness-110 hover:scale-105 active:scale-95 transition duration-200;
+            }
+            .btn-ghost {
+                @apply inline-block text-white font-bold px-7 py-3 hover:text-gray-400 hover:scale-105 active:scale-95 transition duration-200;
+            }
+        }
+    </style>
+</head>
+<body class="bg-tailkit-base-main">
+    <nav class="bg-tailkit-base-main/40 backdrop-blur-md border-b border-tailkit-input sticky top-0 z-50 select-none">
+        <div class="max-w-6xl mx-auto px-4 md:px-6 flex items-center justify-between h-16  text-white">
+            <div class="flex items-center gap-10">
+                <div class="flex items-center gap-2">
+                    <img src="assets/logo.png" class="h-8 w-8" />
+                    <span class="font-bold text-xl lg:text-2xl tracking-wide">TailKit</span>
+                </div>
+
+                <div class="hidden md:flex gap-8">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#support">Support</a>
+                </div>
+            </div>
+
+            <div class="hidden md:flex items-center">
+                <a href="#" class="btn-ghost">Sign In</a>
+                <a href="#" class="btn-primary px-9 lg:px-6 py-3">Sign Up</a>
+            </div>
+            <div class="md:hidden text-2xl cursor-pointer">☰</div>
+        </div>
+    </nav>
+
+    <section id="home" class="scroll-mt-18 min-h-[calc(100dvh-64px)] bg-[url('assets/hero.jpg')] bg-cover bg-center flex items-center py-16">
+        <div class="max-w-6xl mx-auto px-4 md:px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-5">Startup Focused<br>Tailwind CSS Template</h1>
+            <p class="text-lg md:text-xl max-w-xl mx-auto text-white leading-relaxed mb-12">
+                A Complete Tailwind CSS Web Template Crafted for - Startup, SaaS, Business, Software and Agencies. 
+                Comes with high-quality design and everything you need!</p>
+            <div class="flex items-center justify-center gap-4">
+                <a href="#" class="btn-primary px-8 py-4">Get Started</a>
+                <a href="#" class="btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-tailkit-base-main py-16">
+        <div class="max-w-6xl mx-auto px-4 md:px-6 text-center text-white">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Main Features</h2>
+            <p class="text-lg text-white/60 max-w-xl mx-auto mb-10 leading-relaxed">
+                Explore a collection of thoughtfully crafted components designed to help you build modern web experiences with ease.
+            </p>
+            
+            <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="text-left border border-white/10 rounded-lg p-4">
+                    <div class="w-18 h-18 rounded-lg bg-tailkit-card-icon-primary mb-8 flex items-center justify-center">
+                        <img src="assets/start-up.png" class="h-10 w-10" alt="startup">
+                    </div>
+                    <h3 class="text-2xl md:text-xl font-bold mb-4">Crafted for Startups</h3>
+                    <p class="text-lg text-white/60 max-w-lg mx-auto mb-8 leading-relaxed">Tailored for modern startups and SaaS businesses to showcase your vision and product.</p>
+                </div>
+
+                <div class="text-left border border-white/10 rounded-lg p-4">
+                    <div class="w-18 h-18 rounded-lg bg-tailkit-card-icon-primary mb-8 flex items-center justify-center">
+                        <img src="assets/layers.png" class="h-10 w-10" alt="design">
+                    </div>
+                    <h3 class="text-2xl md:text-xl font-bold mb-4">High-quality Design</h3>
+                    <p class="text-lg text-white/60 max-w-lg mx-auto mb-8 leading-relaxed">Clean, modern and fully responsive layout designed to impress users.</p>
+                </div>
+
+                <div class="text-left border border-white/10 rounded-lg p-4"">
+                    <div class="w-18 h-18 rounded-lg bg-tailkit-card-icon-primary mb-8 flex items-center justify-center">
+                        <img src="assets/grid.png" class="h-10 w-10" alt="components">
+                    </div>
+                    <h3 class="text-2xl md:text-xl font-bold mb-4">All Essential Components</h3>
+                    <p class="text-lg text-white/60 max-w-lg mx-auto mb-8 leading-relaxed">Includes hero, features, pricing, testimonials, blog and more ready to go.</p>
+                </div>
+
+                <div class="text-left border border-white/10 rounded-lg p-4"">
+                    <div class="w-18 h-18 rounded-lg bg-tailkit-card-icon-primary mb-8 flex items-center justify-center">
+                        <img src="assets/optimization.png" class="h-10 w-10" alt="optimization">
+                    </div>
+                    <h3 class="text-2xl md:text-xl font-bold mb-4">Speed Optimized</h3>
+                    <p class="text-lg text-white/60 max-w-lg mx-auto mb-8 leading-relaxed">Optimized for quick load and smooth performance on all devices.</p>
+                </div>
+
+                <div class="text-left border border-white/10 rounded-lg p-4"">
+                    <div class="w-18 h-18 rounded-lg bg-tailkit-card-icon-primary mb-8 flex items-center justify-center">
+                        <img src="assets/tool.png" class="h-10 w-10" alt="customizable">
+                    </div>
+                    <h3 class="text-2xl md:text-xl font-bold mb-4">Fully Customizable</h3>
+                    <p class="text-lg text-white/60 max-w-lg mx-auto mb-8 leading-relaxed">Easy to customize with utility-first Tailwind CSS classes.</p>
+                </div>
+
+                <div class="text-left border border-white/10 rounded-lg p-4"">
+                    <div class="w-18 h-18 rounded-lg bg-tailkit-card-icon-primary mb-8 flex items-center justify-center">
+                        <img src="assets/computer.png" class="h-10 w-10" alt="updates">
+                    </div>
+                    <h3 class="text-2xl md:text-xl font-bold mb-4">Regular Updates</h3>
+                    <p class="text-lg text-white/60 max-w-lg mx-auto mb-8 leading-relaxed">Template updated regularly with new features and improvements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[url('assets/background-dark-blue.jpg')] bg-cover bg-center py-16">
+        <div class="max-w-6xl mx-auto px-4 md:px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">We are ready to help</h2>
+            <p class="text-lg text-white/60 max-w-lg mx-auto leading-relaxed mb-12">
+                We are ready to help your project succeed. 
+                Get in touch with our expert team if you need assistance or customization.
+            </p>
+            <div class="max-w-3xl mx-auto border border-white/10 rounded-lg">
+                <iframe
+                    class="w-full aspect-video rounded-lg"
+                    src="https://www.youtube.com/embed/fHnfaaUPozE?si=8wbdZZFq3brfSI69"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class=" bg-tailkit-base-main bg-cover bg-center py-16">
+        <div class="max-w-6xl mx-auto px-4 md:px-6">
+            <div class="flex flex-row">
+                <div class="flex-1 lg:basis-3/5">
+                    <h2 class="text-3xl md:text-4xl max-w-lg font-bold leading-tight text-white mb-6">Crafted for Startup, SaaS and Business Sites.</h2>
+                    <p class="text-lg text-white/60 max-w-lg mb-8 leading-relaxed">
+                        The main ‘thrust’ is to focus on educating attendees on how to 
+                        best protect highly vulnerable business applications with 
+                        interactive panel discussions and roundtables.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex gap-2 items-center">
+                            <div class="w-8 h-8 rounded-lg bg-tailkit-card-icon-primary flex items-center justify-center">
+                                <img src="assets/check.png" class="h-5 w-5" alt="check">
+                            </div>
+                            <div>
+                                <p class="text-lg text-white/60">Premium quality</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <div class="w-8 h-8 rounded-lg bg-tailkit-card-icon-primary flex items-center justify-center">
+                                <img src="assets/check.png" class="h-5 w-5" alt="check">
+                            </div>
+                            <div>
+                                <p class="text-lg text-white/60">Regular updates</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <div class="w-8 h-8 rounded-lg bg-tailkit-card-icon-primary flex items-center justify-center">
+                                <img src="assets/check.png" class="h-5 w-5" alt="check">
+                            </div>
+                            <div>
+                                <p class="text-lg text-white/60">No code required</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <div class="w-8 h-8 rounded-lg bg-tailkit-card-icon-primary flex items-center justify-center">
+                                <img src="assets/check.png" class="h-5 w-5" alt="check">
+                            </div>
+                            <div>
+                                <p class="text-lg text-white/60">Rich documentation</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <div class="w-8 h-8 rounded-lg bg-tailkit-card-icon-primary flex items-center justify-center">
+                                <img src="assets/check.png" class="h-5 w-5" alt="check">
+                            </div>
+                            <div>
+                                <p class="text-lg text-white/60">Use for lifetime</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <div class="w-8 h-8 rounded-lg bg-tailkit-card-icon-primary flex items-center justify-center">
+                                <img src="assets/check.png" class="h-5 w-5" alt="check">
+                            </div>
+                            <div>
+                                <p class="text-lg text-white/60">Developer friendly</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:block lg:basis-2/5 lg:flex lg:justify-between">
+                    <img src="assets/web-dev.png" alt="wev development">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[url('assets/bg-video-section.jpg')] bg-cover bg-center py-16">
+        <div class="max-w-6xl mx-auto px-4 md:px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">What Our Users Say</h2>
+                <p class="text-lg text-white/60 max-w-lg mx-auto leading-relaxed">
+                    Designed for startups and developers who want a clean, scalable, and fully customizable Tailwind CSS foundation.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-white">
+                <div class="bg-tailkit-card-layout rounded-xl p-8 flex flex-col mx-12 md:mx-0">
+                    <div class="text-yellow-400 tracking-widest mb-6">★★★★★</div>
+                    <p class="text-base min-h-[72px] md:min-h-[120px] lg:flex-1">
+                        “Our members are so impressed. It's intuitive. It's clean. If you're building a community.”
+                    </p>
+                    
+                    <div class="h-px w-full bg-white/10 mb-4"></div>
+
+                    <div class="flex gap-4 items-center">
+                        <img src="assets/person1.jpg" class="w-12 h-12 rounded-full object-cover" alt="person 1">
+                        <div>
+                            <p class="font-semibold text-white">Musharof Chy</p>
+                            <p class="text-sm text-white/60">Founder @TailGrids</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-tailkit-card-layout rounded-xl p-8 flex flex-col mx-12 md:mx-0">
+                    <div class="text-yellow-400 tracking-widest mb-6">★★★★★</div>
+                    <p class="text-base text-white/80 min-h-[72px] md:min-h-[120px] lg:flex-1">
+                        “Beautifully designed and very flexible. Helped us build our product landing page quickly.”   
+                    </p>
+                    
+                    <div class="h-px w-full bg-white/10 mb-4"></div>
+                        <div class="flex gap-4 items-center">
+                        <img src="assets/person2.jpg" class="w-12 h-12 rounded-full object-cover" alt="person 2">
+                        <div>
+                            <p class="font-semibold text-white">Devid Weilium</p>
+                            <p class="text-sm text-white/60">Founder @UIdeck</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-tailkit-card-layout rounded-xl p-8 flex flex-col mx-12 md:mx-0">
+                    <div class="text-yellow-400 tracking-widest mb-6">★★★★★</div>
+                    <p class="text-base text-white/80 min-h-[72px] md:min-h-[120px] lg:flex-1">
+                        “This template is a game-changer for startups and agencies alike.”
+                    </p>
+                    
+                    <div class="h-px w-full bg-white/10 mb-4"></div>
+                        <div class="flex gap-4 items-center">
+                        <img src="assets/person3.jpg" class="w-12 h-12 rounded-full object-cover" alt="person 3">
+                        <div>
+                            <p class="font-semibold text-white">Lethium Frenci</p>
+                            <p class="text-sm text-white/60">Founder @Lineicons</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="bg-tailkit-base-main py-16">
+        <div class="max-w-6xl mx-auto px-4 md:px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Simple and Affordable Pricing</h2>
+            <p class="text-base md:text-lg text-white/60 max-w-lg mx-auto leading-relaxed mb-8">
+                Choose a plan that fits your needs. Transparent pricing with no hidden fees and everything you need to launch confidently.
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="text-left bg-tailkit-card-layout rounded-lg mx-12 md:mx-0 p-8 flex flex-col">
+                    <div class="flex items-center justify-between gap-8 mb-2">
+                        <p class="text-3xl font-bold text-white">$40 <span class="text-gray-400">/mo</span></p>
+                        <p class="text-xl font-bold text-white">Lite</p>
+                    </div>
+
+                    <p class="text-base text-white/60 max-w-lg mx-auto mb-8 leading-relaxed">
+                        Basic features for early startups and small projects.
+                    </p>
+
+                    <a href="#" class="btn-primary text-center p-3">Start Free Trial</a>
+
+                    <div class="h-px w-full bg-white/10 my-8"></div>
+
+                    <div class="flex flex-col gap-2">
+                        <div class="flex gap-2 items-center">
+                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
+                                <img src="assets/yes.png" class="h-3 w-3" alt="yes">
+                            </div>
+                            <p class="text-base text-white/60">All UI Components</p>
+                        </div>
+
+                        <div class="flex gap-2 items-center">
+                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
+                                <img src="assets/yes.png" class="h-3 w-3" alt="yes">
+                            </div>
+                            <p class="text-base text-white/60">Use with Unlimited Projects</p>
+                        </div>
+
+                        <div class="flex gap-2 items-center">
+                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
+                                <img src="assets/yes.png" class="h-3 w-3" alt="yes">
+                            </div>
+                            <p class="text-base text-white/60">Commercial Use</p>
+                        </div>
+
+                        <div class="flex gap-2 items-center">
+                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
+                                <img src="assets/yes.png" class="h-3 w-3" alt="yes">
+                            </div>
+                            <p class="text-base text-white/60">Email Support</p>
+                        </div>
+
+                        <div class="flex gap-2 items-center">
+                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
+                                <img src="assets/no.png" class="h-3 w-3" alt="no">
+                            </div>
+                            <p class="text-base text-white/60">Lifetime Access</p>
+                        </div>
+
+                        <div class="flex gap-2 items-center">
+                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
+                                <img src="assets/no.png" class="h-3 w-3" alt="no">
+                            </div>
+                            <p class="text-base text-white/60">Free Lifetime Updates</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-left bg-tailkit-card-layout rounded-lg mx-12 md:mx-0 p-8 flex flex-col">
+                    <div class="flex items-center justify-between gap-8 mb-2">
+                        <p class="text-3xl font-bold text-white">$399 <span class="text-gray-400">/mo</span></p>
+                        <p class="text-xl font-bold text-white">Basic</p>
+                    </div>
+
+                    <p class="text-base text-white/60 max-w-lg mx-auto mb-8 leading-relaxed">
+                        Basic features for early startups and small projects.
+                    </p>
+
+                    <a href="#" class="btn-primary text-center p-3">Start Free Trial</a>
+
+                    <div class="h-px w-full bg-white/10 my-8"></div>
+
+                    <div class="flex flex-col gap-2">
+                        <div class="flex gap-2 items-center">
+                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
+                                <img src="assets/yes.png" class="h-3 w-3" alt="yes">
+                            </div>
+                            <p class="text-base text-white/60">All UI Components</p>
+                        </div>
+
+                        <div class="flex gap-2 items-center">
+                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
+                                <img src="assets/yes.png" class="h-3 w-3" alt="yes">
+                            </div>
+                            <p class="text-base text-white/60">Use with Unlimited Projects</p>
+                        </div>
+
+                        <div class="flex gap-2 items-center">
+                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
+                                <img src="assets/yes.png" class="h-3 w-3" alt="yes">
+                            </div>
+                            <p class="text-base text-white/60">Commercial Use</p>
+                        </div>
+
+                        <div class="flex gap-2 items-center">
+                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
+                                <img src="assets/yes.png" class="h-3 w-3" alt="yes">
+                            </div>
+                            <p class="text-base text-white/60">Email Support</p>
+                        </div>
+
+                        <div class="flex gap-2 items-center">
+                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
+                                <img src="assets/yes.png" class="h-3 w-3" alt="yes">
+                            </div>
+                            <p class="text-base text-white/60">Lifetime Access</p>
+                        </div>
+                        
+                        <div class="flex gap-2 items-center">
+                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
+                                <img src="assets/no.png" class="h-3 w-3" alt="no">
+                            </div>
+                            <p class="text-base text-white/60">Free Lifetime Updates</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-left bg-tailkit-card-layout rounded-lg mx-12 md:mx-0 p-8 flex flex-col">
+                    <div class="flex items-center justify-between gap-8 mb-2">
+                        <p class="text-3xl font-bold text-white">$589 <span class="text-gray-400">/mo</span></p>
+                        <p class="text-xl font-bold text-white">Plus</p>
+                    </div>
+
+                    <p class="text-base text-white/60 max-w-lg mx-auto mb-8 leading-relaxed">
+                        Basic features for early startups and small projects.
+                    </p>
+
+                    <a href="#" class="btn-primary text-center p-3">Start Free Trial</a>
+
+                    <div class="h-px w-full bg-white/10 my-8"></div>
+
+                    <div class="flex flex-col gap-2">
+                        <div class="flex gap-2 items-center">
+                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
+                                <img src="assets/yes.png" class="h-3 w-3" alt="yes">
+                            </div>
+                            <p class="text-base text-white/60">All UI Components</p>
+                        </div>
+
+                        <div class="flex gap-2 items-center">
+                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
+                                <img src="assets/yes.png" class="h-3 w-3" alt="yes">
+                            </div>
+                            <p class="text-base text-white/60">Use with Unlimited Projects</p>
+                        </div>
+
+                        <div class="flex gap-2 items-center">
+                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
+                                <img src="assets/yes.png" class="h-3 w-3" alt="yes">
+                            </div>
+                            <p class="text-base text-white/60">Commercial Use</p>
+                        </div>
+
+                        <div class="flex gap-2 items-center">
+                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
+                                <img src="assets/yes.png" class="h-3 w-3" alt="yes">
+                            </div>
+                            <p class="text-base text-white/60">Email Support</p>
+                        </div>
+
+                        <div class="flex gap-2 items-center">
+                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
+                                <img src="assets/yes.png" class="h-3 w-3" alt="yes">
+                            </div>
+                            <p class="text-base text-white/60">Lifetime Access</p>
+                        </div>
+                        
+                        <div class="flex gap-2 items-center">
+                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
+                                <img src="assets/yes.png" class="h-3 w-3" alt="yes">
+                            </div>
+                            <p class="text-base text-white/60">Free Lifetime Updates</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[url('assets/bg-latest.jpg')] bg-cover bg-center py-16">
+        <div class="max-w-6xl mx-auto px-4 md:px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Our Latest Blogs</h2>
+            <p class="text-base md:text-lg text-white/60 max-w-lg mx-auto leading-relaxed mb-8">
+                Discover strategies, trends, and actionable advice to help your startup move faster and smarter.
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="rounded-lg bg-tailkit-card-layout mx-12 md:mx-0 flex flex-col">
+                    <img class="w-full h-56 rounded-t-lg object-cover" src="assets/one.jpg" alt="ui components">
+
+                    <div class="p-8 text-left text-white">
+                        <h3 class="text-2xl font-bold mb-4 cursor-pointer min-h-[64px] lg:min-h-[96px]">
+                            Best UI components for modern websites
+                        </h3>
+
+                        <p class="text-white/60 text-base leading-relaxed md:min-h-[78px] lg:flex-1">
+                            Explore the best UI components that modern websites use to stay ahead of the competition.
+                        </p>
+
+                        <div class="h-px w-full bg-white/10 my-4"></div>
+
+                        <div class="flex items-center gap-2 text-white justify-between">
+                            <div class="flex items-center gap-1 text-sm">
+                                <img src="assets/user-white.png" alt="user" class="h-5">
+                                <span class="text-md">Samuyl Joshi</span>
+                            </div>
+                            <div class="flex items-center gap-1 text-sm">
+                                <img src="assets/calendar-white.png" alt="user" class="h-5">
+                                <span class="text-md">15 Feb, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="rounded-lg bg-tailkit-card-layout mx-12 md:mx-0 flex flex-col">
+                    <img class="w-full h-56 rounded-t-lg object-cover" src="assets/two.jpg" alt="tips coding">
+
+                    <div class="p-8 text-left text-white">
+                        <h3 class="text-2xl font-bold mb-4 cursor-pointer min-h-[64px] lg:min-h-[96px]">
+                            Tips to Quickly Improve Your Coding Speed
+                        </h3>
+
+                        <p class="text-white/60 text-base leading-relaxed md:min-h-[78px] lg:flex-1">
+                            Learn actionable tips to speed up your coding workflow and productivity.
+                        </p>
+
+                        <div class="h-px w-full bg-white/10 my-4"></div>
+
+                        <div class="flex items-center gap-2 text-white justify-between">
+                            <div class="flex items-center gap-1 text-sm">
+                                <img src="assets/user-white.png" alt="user" class="h-5">
+                                <span class="text-md">Musharof Chy</span>
+                            </div>
+                            <div class="flex items-center gap-1 text-sm">
+                                <img src="assets/calendar-white.png" alt="user" class="h-5">
+                                <span class="text-md">15 Feb, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="rounded-lg bg-tailkit-card-layout mx-12 md:mx-0 flex flex-col">
+                    <img class="w-full h-56 rounded-t-lg object-cover" src="assets/three.jpg" alt="design trends">
+
+                    <div class="p-8 text-left text-white">
+                        <h3 class="text-2xl font-bold mb-4 cursor-pointer min-h-[64px] lg:min-h-[96px]">
+                            Design Trends for 2025: What You Need to Know
+                        </h3>
+
+                        <p class="text-white/60 text-base leading-relaxed md:min-h-[78px] lg:flex-1">
+                            Stay updated with design trends shaping the digital landscape in 2025.
+                        </p>
+
+                        <div class="h-px w-full bg-white/10 my-4"></div>
+
+                        <div class="flex items-center gap-2 text-white justify-between">
+                            <div class="flex items-center gap-1 text-sm">
+                                <img src="assets/user-white.png" alt="user" class="h-5">
+                                <span class="text-md">Lethium Deo</span>
+                            </div>
+                            <div class="flex items-center gap-1 text-sm">
+                                <img src="assets/calendar-white.png" alt="user" class="h-5">
+                                <span class="text-md">15 Feb, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="support" class="bg-tailkit-base-main flex items-center py-18">
+        <div class="max-w-6xl mx-auto px-4 md:px-6">
+            <div class="grid lg:grid-cols-3 gap-8 text-white">
+                <!-- left card -->
+                <div class="bg-tailkit-card-layout p-10 rounded-lg lg:col-span-2 flex flex-col">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-3 text-white">Need Help? Open a Ticket</h2>
+                    <p class="text-base text-white/80 mb-8 leading-relaxed">
+                        Our support team will get back to you ASAP via email.
+                    </p>
+
+                    <form>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-semibold mb-2" for="support-name">Your Name</label>
+                                <input id="support-name" type="text" placeholder="Enter your name"
+                                    class="w-full border border-tailkit-input rounded-lg px-4 py-2.5 bg-tailkit-input placeholder-white/80 caret-tailkit-button-primary focus:outline-none focus:border-tailkit-button-primary transition duration-200"/>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-semibold mb-2" for="support-email">Your Email</label>
+                                <input id="support-email" type="email" placeholder="Enter your email"
+                                    class="w-full border border-tailkit-input rounded-lg px-4 py-2.5 bg-tailkit-input placeholder-white/80 caret-tailkit-button-primary focus:outline-none focus:border-tailkit-button-primary transition duration-200"/>
+                            </div>
+                            <div class="md:col-span-2">
+                                <label class="block text-sm font-semibold mb-2" for="support-message">Your Message</label>
+                                <textarea id="support-message" rows="4" placeholder="Enter your message"
+                                    class="w-full border border-tailkit-input rounded-lg px-4 py-2.5 bg-tailkit-input placeholder-white/80 caret-tailkit-button-primary focus:outline-none focus:border-tailkit-button-primary transition duration-200"></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary py-4 px-9 w-max">Submit Ticket</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- right card -->
+                 <div class="bg-[url('assets/bg-suscribe-form2.jpg')] bg-cover bg-top p-10 rounded-lg flex flex-col">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-3 text-white">Subscribe for Updates</h2>
+                    <p class="text-base text-white/80 leading-relaxed flex-1">
+                        Get notified about new releases, updates, and useful resources.
+                    </p>
+
+                    <div class="h-px w-full bg-white/10 my-10"></div>
+
+                    <form>
+                        <div class="grid gap-6">
+                           <input id="support-name" type="text" placeholder="Enter your name"
+                                    class="w-full border border-tailkit-input rounded-lg px-4 py-2.5 bg-tailkit-input placeholder-white/80 caret-tailkit-button-primary focus:outline-none focus:border-tailkit-button-primary transition duration-200"/>
+                            <input id="support-email" type="email" placeholder="Enter your email"
+                                    class="w-full border border-tailkit-input rounded-lg px-4 py-2.5 bg-tailkit-input placeholder-white/80 caret-tailkit-button-primary focus:outline-none focus:border-tailkit-button-primary transition duration-200"/>
+                            <button type="submit" class="btn-primary py-3 px-6">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-tailkit-base-footer py-16">
+        <div class="max-w-6xl mx-auto px-4 md:px-6 text-white">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="col-span-2 lg:col-span-1 max-w-xs">
+                    <div class="flex items-center gap-2 mb-3">
+                        <img src="assets/logo.png" class="h-7 w-7" />
+                        <span class="font-bold text-xl tracking-wide">TailKit</span>
+                    </div>
+                    <p class="text-base text-white/60 leading-relaxed">
+                        A flexible and scalable Tailwind CSS foundation for modern web products.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-white  mb-3">Quick Links</h3>
+                    <div class="space-y-2">
+                        <a href="#about" class="block text-base text-white/60 hover:text-white transition-colors duration-200">About</a>
+                        <a href="#pricing" class="block text-base text-white/60 hover:text-white transition-colors duration-200">Pricing</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-white  mb-3">Venue</h3>
+                    <div class="space-y-2">
+                        <p class="text-base text-white/60">Jakarta Convention Center</p>
+                        <p class="text-base text-white/60">Jl. Jenderal Gatot Subroto</p>
+                        <p class="text-base text-white/60">Jakarta Selatan, 12930</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-white  mb-3">Contact</h3>
+                    <div class="space-y-2">
+                        <p class="text-base text-white/60">info@tailkit.id</p>
+                        <p class="text-base text-white/60">021-555-2026</p>
+                        <p class="text-base text-white/60">@tailkit</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-px w-full bg-white/20 my-10"></div>
+            <p class="text-base text-center font-semibold">© Crafted by TailKit for You!</p>
+        </div>
+    </footer>
+</body>
+</html>

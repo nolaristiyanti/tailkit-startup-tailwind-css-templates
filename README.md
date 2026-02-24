@@ -1,23 +1,21 @@
 # tailkit-startup-tailwind-css-templates
 
 640px :
-<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/20ba9fc3-ca47-4f82-b4c3-e1ba8e60c454" />
-<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/8f93b299-03e0-4d63-ba60-acd20560fff2" />
-<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/e0e910eb-6b00-427b-80e7-435771b97cf2" />
-<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/f65b5d7a-94a0-4c43-83c4-c7730e20c2b4" />
-<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/9fd91c3e-434b-4dc1-b240-fbfb565318fa" />
-<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/d4cbec3f-d22d-406a-805d-1dcdf82c8563" />
-<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/13d65ffd-77bd-4dc9-b613-71e168687a3d" />
-<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/62a6e8d2-d61a-4251-a786-37be280441eb" />
-<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/653ba85e-46b7-4779-a77d-0200d7fc82e1" />
-<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/c5729d2a-6795-413f-b702-cd0949618f6d" />
-<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/15a1bd85-7694-488f-b0ca-616aae78d243" />
-<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/f7916d6b-a37a-4398-889b-bfad9a492411" />
-<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/ab177fe7-ae11-4022-a317-011d489d277f" />
-<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/63f89195-1809-4f78-86a3-989195600bdb" />
-<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/93b27be7-92b6-4330-8798-056e85496bb2" />
-<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/5a3b58ce-f4f1-4dea-ad39-1f8c651055bb" />
-<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/30cfef78-5a58-4957-b0ec-a280d2634bbf" />
+<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/4c747559-3ef3-4d79-9e2e-a3eea6557b80" />
+<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/73c8ee79-cbc3-4d19-b0e9-9b9979612840" />
+<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/76bc0c30-938d-473a-a837-a5ed26375622" />
+<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/6dd1fb61-d6be-43c8-920a-c2506220bb4f" />
+<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/bbf046bf-7ae5-4387-8036-c29ffad7beb1" />
+<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/dd3cb416-9509-41ff-96cb-7a20d371bb6a" />
+<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/80de4da9-79c4-491b-9ad1-0083d827acfd" />
+<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/f45fd544-af12-4ff1-a4cf-eaae87533930" />
+<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/a5c19ebe-09de-48a3-a1ce-75318ebbeb12" />
+<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/f1c1b246-e543-4c7b-9306-a0afe88a1869" />
+<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/1dea78a4-646d-4843-95d2-2b3d3b1def2a" />
+<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/0a89268a-2199-4ffd-9ec4-f8d6ac4a6f42" />
+<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/1c30e945-c0ba-44ab-ba9e-428164e1cbdf" />
+<img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/1652ca52-ec15-4e75-a38c-4d70dfc60f3a" />
+
 
 768px :
 <img width="2880" height="1704" alt="image" src="https://github.com/user-attachments/assets/e108c31f-515f-41a2-99b1-c806f3319b5e" />

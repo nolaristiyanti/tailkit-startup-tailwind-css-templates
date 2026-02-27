@@ -11,20 +11,13 @@
         @theme {
             --font-body: "Inter", sans-serif;
             --color-tailkit-base-main : #0b113a;
-            --color-tailkit-base-footer : #090e34;
             --color-tailkit-button-primary : #4a6cf7;
-            --color-tailkit-button-primary-hover : #3f5ce0;
             --color-tailkit-button-secondary : #222749;
             --color-tailkit-card-icon-primary : #101848;
             --color-tailkit-card-icon-secondary : #222956;
             --color-tailkit-card-layout : #1D2144;
             --color-tailkit-input : #242b51;
-        }
-
-        @layer base {
-            a {
-                @apply hover:text-gray-400 active:text-gray-400;
-            }
+            --color-tailkit-base-footer : #090e34;
         }
 
         @layer components {
@@ -33,9 +26,6 @@
             }
             .btn-secondary {
                 @apply bg-tailkit-button-secondary border border-white/10 hover:border-white/30;
-            }
-            .btn-ghost {
-                @apply inline-block text-white font-bold px-7 py-3 hover:text-gray-400 hover:scale-105 active:scale-95 transition duration-200;
             }
         }
     </style>
@@ -58,7 +48,7 @@
             </div>
 
             <div class="hidden md:flex items-center">
-                <a href="#" class="btn-ghost">Sign In</a>
+                <a href="#" class="">Sign In</a>
                 <a href="#" class="btn-primary px-9 lg:px-6 py-3">Sign Up</a>
             </div>
             <div class="md:hidden text-2xl cursor-pointer">☰</div>

@@ -83,6 +83,15 @@
             .p-details {
                 @apply text-sm text-white/70;
             }
+            .price {
+                @apply text-xl sm:text-2xl font-bold text-white;
+            }
+            .type {
+                @apply text-base sm:text-xl font-bold text-white;
+            }
+            .type-desc {
+                @apply text-base text-white/70 mb-8 leading-relaxed;
+            }
             .card {
                 @apply bg-tailkit-card-layout rounded-lg;
             }
@@ -99,6 +108,9 @@
             }
             .about-card-icon {
                 @apply inline-flex items-center justify-center w-8 h-8 bg-tailkit-card-icon-primary rounded-lg;
+            }
+            .benefit-card-icon {
+                @apply inline-flex items-center justify-center w-4 h-4 bg-tailkit-card-icon-secondary rounded-full;
             }
             .icon-round-xl {
                 @apply h-12 w-12 rounded-full;
@@ -413,187 +425,190 @@
         </div>
     </section>
 
-    <section id="pricing" class="bg-tailkit-base-main py-16">
-        <div class="max-w-6xl mx-auto px-4 md:px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Simple and Affordable Pricing</h2>
-            <p class="text-base md:text-lg text-white/60 max-w-lg mx-auto leading-relaxed mb-8">
-                Choose a plan that fits your needs. Transparent pricing with no hidden fees and everything you need to launch confidently.
-            </p>
+    <section id="pricing">
+        <div class="section-container section">
+            <div class="text-center">
+                <h2 class="max-w-3xl mx-auto h2 mb-4">Simple and Affordable Pricing</h2>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="text-left bg-tailkit-card-layout rounded-lg mx-12 md:mx-0 p-8 flex flex-col">
+                <p class="max-w-2xl mx-auto p-h2 mb-10">
+                    Choose a plan that fits your needs. Transparent pricing with no hidden fees and everything you need to launch confidently.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card flex flex-col p-8">
                     <div class="flex items-center justify-between gap-8 mb-2">
-                        <p class="text-3xl font-bold text-white">$40 <span class="text-gray-400">/mo</span></p>
-                        <p class="text-xl font-bold text-white">Lite</p>
+                        <p class="price">$40 <span class="text-gray-400">/mo</span></p>
+                        <p class="type">Lite</p>
                     </div>
 
-                    <p class="text-base text-white/60 mb-8 leading-relaxed">
+                    <p class="type-desc">
                         Basic features for early startups and small projects.
                     </p>
 
-                    <a href="#" class="btn-primary text-center p-3">Start Free Trial</a>
+                    <a href="#" class="btn btn-primary btn-md w-full">Start Free Trial</a>
 
-                    <div class="h-px w-full bg-white/10 my-8"></div>
+                    <div class="line-divider my-8"></div>
 
                     <div class="flex flex-col gap-2">
-                        <div class="flex gap-2 items-center">
-                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
-                                <img src="assets/yes.png" class="h-3 w-3" alt="yes">
-                            </div>
-                            <p class="text-base text-white/60">All UI Components</p>
+                        <div class="flex items-center gap-3">
+                            <span class="benefit-card-icon">
+                                <img src="assets/yes.png" class="icon-sm" alt="yes">
+                            </span>
+                            <p class="p-h3">All UI Components</p>
                         </div>
 
-                        <div class="flex gap-2 items-center">
-                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
-                                <img src="assets/yes.png" class="h-3 w-3" alt="yes">
-                            </div>
-                            <p class="text-base text-white/60">Use with Unlimited Projects</p>
+                        <div class="flex items-center gap-3">
+                            <span class="benefit-card-icon">
+                                <img src="assets/yes.png" class="icon-sm" alt="yes">
+                            </span>
+                            <p class="p-h3">Use with Unlimited Projects</p>
                         </div>
 
-                        <div class="flex gap-2 items-center">
-                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
-                                <img src="assets/yes.png" class="h-3 w-3" alt="yes">
-                            </div>
-                            <p class="text-base text-white/60">Commercial Use</p>
+                        <div class="flex items-center gap-3">
+                            <span class="benefit-card-icon">
+                                <img src="assets/yes.png" class="icon-sm" alt="yes">
+                            </span>
+                            <p class="p-h3">Commercial Use</p>
                         </div>
 
-                        <div class="flex gap-2 items-center">
-                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
-                                <img src="assets/yes.png" class="h-3 w-3" alt="yes">
-                            </div>
-                            <p class="text-base text-white/60">Email Support</p>
+                        <div class="flex items-center gap-3">
+                            <span class="benefit-card-icon">
+                                <img src="assets/yes.png" class="icon-sm" alt="yes">
+                            </span>
+                            <p class="p-h3">Email Support</p>
                         </div>
 
-                        <div class="flex gap-2 items-center">
-                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
-                                <img src="assets/no.png" class="h-3 w-3" alt="no">
-                            </div>
-                            <p class="text-base text-white/60">Lifetime Access</p>
+                        <div class="flex items-center gap-3">
+                            <span class="benefit-card-icon">
+                                <img src="assets/no.png" class="icon-sm" alt="no">
+                            </span>
+                            <p class="p-h3">Lifetime Access</p>
                         </div>
 
-                        <div class="flex gap-2 items-center">
-                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
-                                <img src="assets/no.png" class="h-3 w-3" alt="no">
-                            </div>
-                            <p class="text-base text-white/60">Free Lifetime Updates</p>
+                        <div class="flex items-center gap-3">
+                            <span class="benefit-card-icon">
+                                <img src="assets/no.png" class="icon-sm" alt="no">
+                            </span>
+                            <p class="p-h3">Free Lifetime Updates</p>
                         </div>
                     </div>
-                </div>
+                    </div>
 
-                <div class="text-left bg-tailkit-card-layout rounded-lg mx-12 md:mx-0 p-8 flex flex-col">
+                    <div class="card flex flex-col p-8">
                     <div class="flex items-center justify-between gap-8 mb-2">
-                        <p class="text-3xl font-bold text-white">$399 <span class="text-gray-400">/mo</span></p>
-                        <p class="text-xl font-bold text-white">Basic</p>
+                        <p class="price">$399<span class="text-gray-400">/mo</span></p>
+                        <p class="type">Basic</p>
                     </div>
 
-                    <p class="text-base text-white/60 mb-8 leading-relaxed">
+                    <p class="type-desc">
                         Perfect for growing products with additional integrations.
                     </p>
 
-                    <a href="#" class="btn-primary text-center p-3">Start Free Trial</a>
+                    <a href="#" class="btn btn-primary btn-md w-full">Start Free Trial</a>
 
-                    <div class="h-px w-full bg-white/10 my-8"></div>
+                    <div class="line-divider my-8"></div>
 
                     <div class="flex flex-col gap-2">
-                        <div class="flex gap-2 items-center">
-                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
-                                <img src="assets/yes.png" class="h-3 w-3" alt="yes">
-                            </div>
-                            <p class="text-base text-white/60">All UI Components</p>
+                        <div class="flex items-center gap-3">
+                            <span class="benefit-card-icon">
+                                <img src="assets/yes.png" class="icon-sm" alt="yes">
+                            </span>
+                            <p class="p-h3">All UI Components</p>
                         </div>
 
-                        <div class="flex gap-2 items-center">
-                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
-                                <img src="assets/yes.png" class="h-3 w-3" alt="yes">
-                            </div>
-                            <p class="text-base text-white/60">Use with Unlimited Projects</p>
+                        <div class="flex items-center gap-3">
+                            <span class="benefit-card-icon">
+                                <img src="assets/yes.png" class="icon-sm" alt="yes">
+                            </span>
+                            <p class="p-h3">Use with Unlimited Projects</p>
                         </div>
 
-                        <div class="flex gap-2 items-center">
-                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
-                                <img src="assets/yes.png" class="h-3 w-3" alt="yes">
-                            </div>
-                            <p class="text-base text-white/60">Commercial Use</p>
+                        <div class="flex items-center gap-3">
+                            <span class="benefit-card-icon">
+                                <img src="assets/yes.png" class="icon-sm" alt="yes">
+                            </span>
+                            <p class="p-h3">Commercial Use</p>
                         </div>
 
-                        <div class="flex gap-2 items-center">
-                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
-                                <img src="assets/yes.png" class="h-3 w-3" alt="yes">
-                            </div>
-                            <p class="text-base text-white/60">Email Support</p>
+                        <div class="flex items-center gap-3">
+                            <span class="benefit-card-icon">
+                                <img src="assets/yes.png" class="icon-sm" alt="yes">
+                            </span>
+                            <p class="p-h3">Email Support</p>
                         </div>
 
-                        <div class="flex gap-2 items-center">
-                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
-                                <img src="assets/yes.png" class="h-3 w-3" alt="yes">
-                            </div>
-                            <p class="text-base text-white/60">Lifetime Access</p>
+                        <div class="flex items-center gap-3">
+                            <span class="benefit-card-icon">
+                                <img src="assets/yes.png" class="icon-sm" alt="yes">
+                            </span>
+                            <p class="p-h3">Lifetime Access</p>
                         </div>
-                        
-                        <div class="flex gap-2 items-center">
-                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
-                                <img src="assets/no.png" class="h-3 w-3" alt="no">
-                            </div>
-                            <p class="text-base text-white/60">Free Lifetime Updates</p>
+
+                        <div class="flex items-center gap-3">
+                            <span class="benefit-card-icon">
+                                <img src="assets/no.png" class="icon-sm" alt="no">
+                            </span>
+                            <p class="p-h3">Free Lifetime Updates</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="text-left bg-tailkit-card-layout rounded-lg mx-12 md:mx-0 p-8 flex flex-col">
+                <div class="card flex flex-col p-8">
                     <div class="flex items-center justify-between gap-8 mb-2">
-                        <p class="text-3xl font-bold text-white">$589 <span class="text-gray-400">/mo</span></p>
-                        <p class="text-xl font-bold text-white">Plus</p>
+                        <p class="price">$589<span class="text-gray-400">/mo</span></p>
+                        <p class="type">Plus</p>
                     </div>
 
-                    <p class="text-base text-white/60 mb-8 leading-relaxed">
+                    <p class="type-desc">
                         Full package optimized for performance and scalability.
                     </p>
 
-                    <a href="#" class="btn-primary text-center p-3">Start Free Trial</a>
+                    <a href="#" class="btn btn-primary btn-md w-full">Start Free Trial</a>
 
-                    <div class="h-px w-full bg-white/10 my-8"></div>
+                    <div class="line-divider my-8"></div>
 
                     <div class="flex flex-col gap-2">
-                        <div class="flex gap-2 items-center">
-                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
-                                <img src="assets/yes.png" class="h-3 w-3" alt="yes">
-                            </div>
-                            <p class="text-base text-white/60">All UI Components</p>
+                        <div class="flex items-center gap-3">
+                            <span class="benefit-card-icon">
+                                <img src="assets/yes.png" class="icon-sm" alt="yes">
+                            </span>
+                            <p class="p-h3">All UI Components</p>
                         </div>
 
-                        <div class="flex gap-2 items-center">
-                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
-                                <img src="assets/yes.png" class="h-3 w-3" alt="yes">
-                            </div>
-                            <p class="text-base text-white/60">Use with Unlimited Projects</p>
+                        <div class="flex items-center gap-3">
+                            <span class="benefit-card-icon">
+                                <img src="assets/yes.png" class="icon-sm" alt="yes">
+                            </span>
+                            <p class="p-h3">Use with Unlimited Projects</p>
                         </div>
 
-                        <div class="flex gap-2 items-center">
-                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
-                                <img src="assets/yes.png" class="h-3 w-3" alt="yes">
-                            </div>
-                            <p class="text-base text-white/60">Commercial Use</p>
+                        <div class="flex items-center gap-3">
+                            <span class="benefit-card-icon">
+                                <img src="assets/yes.png" class="icon-sm" alt="yes">
+                            </span>
+                            <p class="p-h3">Commercial Use</p>
                         </div>
 
-                        <div class="flex gap-2 items-center">
-                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
-                                <img src="assets/yes.png" class="h-3 w-3" alt="yes">
-                            </div>
-                            <p class="text-base text-white/60">Email Support</p>
+                        <div class="flex items-center gap-3">
+                            <span class="benefit-card-icon">
+                                <img src="assets/yes.png" class="icon-sm" alt="yes">
+                            </span>
+                            <p class="p-h3">Email Support</p>
                         </div>
 
-                        <div class="flex gap-2 items-center">
-                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
-                                <img src="assets/yes.png" class="h-3 w-3" alt="yes">
-                            </div>
-                            <p class="text-base text-white/60">Lifetime Access</p>
+                        <div class="flex items-center gap-3">
+                            <span class="benefit-card-icon">
+                                <img src="assets/yes.png" class="icon-sm" alt="yes">
+                            </span>
+                            <p class="p-h3">Lifetime Access</p>
                         </div>
-                        
-                        <div class="flex gap-2 items-center">
-                            <div class="w-4 h-4 rounded-full bg-tailkit-card-icon-secondary flex items-center justify-center">
-                                <img src="assets/yes.png" class="h-3 w-3" alt="yes">
-                            </div>
-                            <p class="text-base text-white/60">Free Lifetime Updates</p>
+
+                        <div class="flex items-center gap-3">
+                            <span class="benefit-card-icon">
+                                <img src="assets/yes.png" class="icon-sm" alt="yes">
+                            </span>
+                            <p class="p-h3">Free Lifetime Updates</p>
                         </div>
                     </div>
                 </div>

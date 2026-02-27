@@ -24,11 +24,8 @@
             .section-container {
                 @apply max-w-6xl mx-auto px-4 md:px-6;
             }
-            .icon-md {
-                @apply h-8 w-8;
-            }
-            .logo-text {
-                @apply text-xl font-bold tracking-wide;
+            .section {
+                @apply py-16 md:py-24;
             }
             .nav-link {
                 @apply text-white hover:text-gray-400 transition duration-200;
@@ -50,9 +47,6 @@
             }
             .btn-sm { @apply px-4 py-2; }
             .btn-md { @apply px-6 py-3; }
-            .section {
-                @apply py-16 md:py-24;
-            }
             .h1 {
                 @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight;
             }
@@ -70,6 +64,9 @@
             }
             .p-h3 {
                 @apply text-sm sm:text-base text-white/70 leading-relaxed;
+            }
+            .logo-text {
+                @apply text-xl font-bold tracking-wide;
             }
             .rating {
                 @apply text-yellow-400 tracking-widest;
@@ -111,6 +108,18 @@
             }
             .benefit-card-icon {
                 @apply inline-flex items-center justify-center w-4 h-4 bg-tailkit-card-icon-secondary rounded-full;
+            }
+            .icon-round-xl {
+                @apply h-12 w-12 rounded-full;
+            }
+            .article-img {
+                @apply w-full h-56 rounded-t-lg object-cover;
+            }
+            .icon-sm {
+                @apply h-4 w-4;
+            }
+            .icon-md {
+                @apply h-8 w-8;
             }
             .icon-round-xl {
                 @apply h-12 w-12 rounded-full;
@@ -616,89 +625,92 @@
         </div>
     </section>
 
-    <section class="bg-[url('assets/bg-latest.jpg')] bg-cover bg-center py-16">
-        <div class="max-w-6xl mx-auto px-4 md:px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Our Latest Blogs</h2>
-            <p class="text-base md:text-lg text-white/60 max-w-lg mx-auto leading-relaxed mb-8">
-                Discover strategies, trends, and actionable advice to help your startup move faster and smarter.
-            </p>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <article class="rounded-lg bg-tailkit-card-layout mx-12 md:mx-0 flex flex-col">
-                    <img class="w-full h-56 rounded-t-lg object-cover" src="assets/one.jpg" alt="ui components">
+    <section id="updates" class="bg-[url('assets/bg-latest.jpg')] bg-cover bg-center">
+        <div class="section-container section">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="h2 mb-4">Our Latest Blogs</h2>
+                <p class="p-h2 mb-10">
+                    Discover strategies, trends, and actionable advice to help your startup move faster and smarter.
+                </p>
+            </div>
 
-                    <div class="p-8 text-left text-white">
-                        <h3 class="text-2xl font-bold mb-4 cursor-pointer min-h-[64px] lg:min-h-[96px]">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="card flex flex-col">
+                    <img class="article-img" src="assets/one.jpg" alt="ui components">
+
+                    <div class="p-8 flex flex-col">
+                        <h3 class="h3 mb-4 underline underline-offset-4 cursor-pointer">
                             Best UI components for modern websites
                         </h3>
 
-                        <p class="text-white/60 text-base leading-relaxed md:min-h-[78px] lg:flex-1">
+                        <p class="p-h3">
                             Explore the best UI components that modern websites use to stay ahead of the competition.
                         </p>
 
-                        <div class="h-px w-full bg-white/10 my-4"></div>
+                        <div class="line-divider my-4"></div>
 
-                        <div class="flex items-center gap-2 text-white justify-between">
-                            <div class="flex items-center gap-1 text-sm">
-                                <img src="assets/user-white.png" alt="user" class="h-5">
-                                <span class="text-md">Samuyl Joshi</span>
+                        <div class="flex items-center justify-between gap-1">
+                            <div class="flex items-center gap-1">
+                                <img src="assets/user-white.png" alt="user" class="icon-sm">
+                                <span class="p-details">Samuyl Joshi</span>
                             </div>
-                            <div class="flex items-center gap-1 text-sm">
-                                <img src="assets/calendar-white.png" alt="user" class="h-5">
-                                <span class="text-md">15 Feb, 2025</span>
+                            <div class="flex items-center gap-1">
+                                <img src="assets/calendar-white.png" alt="calendar" class="icon-sm">
+                                <span class="p-details">15 Feb, 2025</span>
                             </div>
                         </div>
                     </div>
                 </article>
 
-                <article class="rounded-lg bg-tailkit-card-layout mx-12 md:mx-0 flex flex-col">
-                    <img class="w-full h-56 rounded-t-lg object-cover" src="assets/two.jpg" alt="tips coding">
+                <article class="card flex flex-col">
+                    <img class="article-img" src="assets/two.jpg" alt="tips coding">
 
-                    <div class="p-8 text-left text-white">
-                        <h3 class="text-2xl font-bold mb-4 cursor-pointer min-h-[64px] lg:min-h-[96px]">
+                    <div class="p-8 flex flex-col">
+                        <h3 class="h3 mb-4 underline underline-offset-4 cursor-pointer">
                             Tips to Quickly Improve Your Coding Speed
                         </h3>
 
-                        <p class="text-white/60 text-base leading-relaxed md:min-h-[78px] lg:flex-1">
+                        <p class="p-h3">
                             Learn actionable tips to speed up your coding workflow and productivity.
                         </p>
 
-                        <div class="h-px w-full bg-white/10 my-4"></div>
+                        <div class="line-divider my-4"></div>
 
-                        <div class="flex items-center gap-2 text-white justify-between">
-                            <div class="flex items-center gap-1 text-sm">
-                                <img src="assets/user-white.png" alt="user" class="h-5">
-                                <span class="text-md">Musharof Chy</span>
+                        <div class="flex items-center justify-between gap-1">
+                            <div class="flex items-center gap-1">
+                                <img src="assets/user-white.png" alt="user" class="icon-sm">
+                                <span class="p-details">Musharof Chy</span>
                             </div>
-                            <div class="flex items-center gap-1 text-sm">
-                                <img src="assets/calendar-white.png" alt="user" class="h-5">
-                                <span class="text-md">15 Feb, 2025</span>
+                            <div class="flex items-center gap-1">
+                                <img src="assets/calendar-white.png" alt="calendar" class="icon-sm">
+                                <span class="p-details">15 Feb, 2025</span>
                             </div>
                         </div>
                     </div>
                 </article>
 
-                <article class="rounded-lg bg-tailkit-card-layout mx-12 md:mx-0 flex flex-col">
-                    <img class="w-full h-56 rounded-t-lg object-cover" src="assets/three.jpg" alt="design trends">
+                <article class="card flex flex-col">
+                    <img class="article-img" src="assets/three.jpg" alt="design trends">
 
-                    <div class="p-8 text-left text-white">
-                        <h3 class="text-2xl font-bold mb-4 cursor-pointer min-h-[64px] lg:min-h-[96px]">
+                    <div class="p-8 flex flex-col">
+                        <h3 class="h3 mb-4 underline underline-offset-4 cursor-pointer">
                             Design Trends for 2025: What You Need to Know
                         </h3>
 
-                        <p class="text-white/60 text-base leading-relaxed md:min-h-[78px] lg:flex-1">
+                        <p class="p-h3">
                             Stay updated with design trends shaping the digital landscape in 2025.
                         </p>
 
-                        <div class="h-px w-full bg-white/10 my-4"></div>
+                        <div class="line-divider my-4"></div>
 
-                        <div class="flex items-center gap-2 text-white justify-between">
-                            <div class="flex items-center gap-1 text-sm">
-                                <img src="assets/user-white.png" alt="user" class="h-5">
-                                <span class="text-md">Lethium Deo</span>
+                        <div class="flex items-center justify-between gap-1">
+                            <div class="flex items-center gap-1">
+                                <img src="assets/user-white.png" alt="user" class="icon-sm">
+                                <span class="p-details">Lethium Deo</span>
                             </div>
-                            <div class="flex items-center gap-1 text-sm">
-                                <img src="assets/calendar-white.png" alt="user" class="h-5">
-                                <span class="text-md">15 Feb, 2025</span>
+                            <div class="flex items-center gap-1">
+                                <img src="assets/calendar-white.png" alt="calendar" class="icon-sm">
+                                <span class="p-details">15 Feb, 2025</span>
                             </div>
                         </div>
                     </div>

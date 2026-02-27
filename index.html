@@ -79,6 +79,9 @@
             .feature-card-content {
                 @apply transition duration-300 ease-out group-hover:-translate-y-0.5;
             }
+            .about-card-icon {
+                @apply inline-flex items-center justify-center w-8 h-8 bg-tailkit-card-icon-primary rounded-lg;
+            }
         }
     </style>
 </head>
@@ -259,70 +262,64 @@
         </div>
     </section>
 
-    <section id="about" class=" bg-tailkit-base-main bg-cover bg-center py-32">
-        <div class="max-w-6xl mx-auto px-4 md:px-6">
-            <div class="flex flex-row">
-                <div class="flex-1 lg:basis-3/5">
-                    <h2 class="text-3xl md:text-4xl max-w-lg font-bold leading-tight text-white mb-6">Crafted for Startup, SaaS and Business Sites.</h2>
-                    <p class="text-lg text-white/60 max-w-lg mb-8 leading-relaxed">
-                        The main ‘thrust’ is to focus on educating attendees on how to 
-                        best protect highly vulnerable business applications with 
-                        interactive panel discussions and roundtables.
-                    </p>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="flex gap-2 items-center">
-                            <div class="w-8 h-8 rounded-lg bg-tailkit-card-icon-primary flex items-center justify-center">
-                                <img src="assets/check.png" class="h-5 w-5" alt="check">
-                            </div>
-                            <div>
-                                <p class="text-lg text-white/60">Premium quality</p>
-                            </div>
+    <section id="about">
+        <div class="section-container section">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-1">
+                <div>
+                    <div class="mb-4">
+                        <h2 class="h2 mb-4">Crafted for Startup, SaaS and Business Sites.</h2>
+                        <p class="p-h2">
+                            TailKit helps you ship a polished landing page faster with reusable sections, clean structure, and scalable styles.
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div class="flex items-center gap-3">
+                            <span class="about-card-icon">
+                                <img src="assets/check.png" class="icon-sm" alt="check">
+                            </span>
+                            <p class="p-h2">Premium quality</p>
                         </div>
-                        <div class="flex gap-2 items-center">
-                            <div class="w-8 h-8 rounded-lg bg-tailkit-card-icon-primary flex items-center justify-center">
-                                <img src="assets/check.png" class="h-5 w-5" alt="check">
-                            </div>
-                            <div>
-                                <p class="text-lg text-white/60">Regular updates</p>
-                            </div>
+
+                        <div class="flex items-center gap-3">
+                            <span class="about-card-icon">
+                                <img src="assets/check.png" class="icon-sm" alt="check">
+                            </span>
+                            <p class="p-h2">Regular updates</p>
                         </div>
-                        <div class="flex gap-2 items-center">
-                            <div class="w-8 h-8 rounded-lg bg-tailkit-card-icon-primary flex items-center justify-center">
-                                <img src="assets/check.png" class="h-5 w-5" alt="check">
-                            </div>
-                            <div>
-                                <p class="text-lg text-white/60">No code required</p>
-                            </div>
+
+                        <div class="flex items-center gap-3">
+                            <span class="about-card-icon">
+                                <img src="assets/check.png" class="icon-sm" alt="check">
+                            </span>
+                            <p class="p-h2">No code required</p>
                         </div>
-                        <div class="flex gap-2 items-center">
-                            <div class="w-8 h-8 rounded-lg bg-tailkit-card-icon-primary flex items-center justify-center">
-                                <img src="assets/check.png" class="h-5 w-5" alt="check">
-                            </div>
-                            <div>
-                                <p class="text-lg text-white/60">Rich documentation</p>
-                            </div>
+
+                        <div class="flex items-center gap-3">
+                            <span class="about-card-icon">
+                                <img src="assets/check.png" class="icon-sm" alt="check">
+                            </span>
+                            <p class="p-h2">Rich documentation</p>
                         </div>
-                        <div class="flex gap-2 items-center">
-                            <div class="w-8 h-8 rounded-lg bg-tailkit-card-icon-primary flex items-center justify-center">
-                                <img src="assets/check.png" class="h-5 w-5" alt="check">
-                            </div>
-                            <div>
-                                <p class="text-lg text-white/60">Use for lifetime</p>
-                            </div>
+
+                        <div class="flex items-center gap-3">
+                            <span class="about-card-icon">
+                                <img src="assets/check.png" class="icon-sm" alt="check">
+                            </span>
+                            <p class="p-h2">Use for lifetime</p>
                         </div>
-                        <div class="flex gap-2 items-center">
-                            <div class="w-8 h-8 rounded-lg bg-tailkit-card-icon-primary flex items-center justify-center">
-                                <img src="assets/check.png" class="h-5 w-5" alt="check">
-                            </div>
-                            <div>
-                                <p class="text-lg text-white/60">Developer friendly</p>
-                            </div>
+
+                        <div class="flex items-center gap-3">
+                            <span class="about-card-icon">
+                                <img src="assets/check.png" class="icon-sm" alt="check">
+                            </span>
+                            <p class="p-h2">Developer friendly</p>
                         </div>
                     </div>
                 </div>
-                
-                <div class="hidden lg:block lg:basis-2/5 lg:flex lg:justify-between">
-                    <img src="assets/web-dev.png" alt="wev development">
+
+                <div class="flex justify-center lg:justify-end">
+                    <img src="assets/web-dev.png" alt="Web development illustration"/>
                 </div>
             </div>
         </div>

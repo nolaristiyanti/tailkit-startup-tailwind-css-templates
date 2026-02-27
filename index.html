@@ -36,6 +36,9 @@
             .menu-link {
                 @apply text-white hover:bg-white/5 transition duration-200 rounded-lg px-3 py-2;
             }
+            .line-divider {
+                @apply h-px w-full bg-white/10;
+            }
             .btn {
                 @apply text-white font-bold text-center rounded-lg transition duration-200;
             }
@@ -68,6 +71,21 @@
             .p-h3 {
                 @apply text-sm sm:text-base text-white/70 leading-relaxed;
             }
+            .rating {
+                @apply text-yellow-400 tracking-widest;
+            }
+            .rating-text {
+                @apply text-white leading-relaxed;
+            }
+            .p-header {
+                @apply font-semibold text-white;
+            }
+            .p-details {
+                @apply text-sm text-white/70;
+            }
+            .card {
+                @apply bg-tailkit-card-layout rounded-lg;
+            }
             .feature-card {
                 @apply rounded-xl border border-white/10 p-4 bg-transparent
                         overflow-hidden transition duration-300 ease-out hover:-translate-y-1 hover:border-white/20 hover:bg-white/5;
@@ -81,6 +99,9 @@
             }
             .about-card-icon {
                 @apply inline-flex items-center justify-center w-8 h-8 bg-tailkit-card-icon-primary rounded-lg;
+            }
+            .icon-round-xl {
+                @apply h-12 w-12 rounded-full;
             }
         }
     </style>
@@ -325,60 +346,66 @@
         </div>
     </section>
 
-    <section class="bg-[url('assets/bg-video-section.jpg')] bg-cover bg-center py-16">
-        <div class="max-w-6xl mx-auto px-4 md:px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">What Our Users Say</h2>
-                <p class="text-lg text-white/60 max-w-lg mx-auto leading-relaxed">
+    <section id="reviews" class="bg-[url('assets/background-navy.jpg')] bg-cover bg-center">
+        <div class="section-container section">
+            <div class="max-w-xl mx-auto text-center">
+                <h2 class="h2 mb-4">What Our Users Say</h2>
+                <p class="p-h2 mb-10">
                     Designed for startups and developers who want a clean, scalable, and fully customizable Tailwind CSS foundation.
                 </p>
             </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-white">
-                <div class="bg-tailkit-card-layout rounded-xl p-8 flex flex-col mx-12 md:mx-0">
-                    <div class="text-yellow-400 tracking-widest mb-6">★★★★★</div>
-                    <p class="text-base min-h-[72px] md:min-h-[120px] lg:flex-1">
-                        “Our members are so impressed. It's intuitive. It's clean. If you're building a community.”
-                    </p>
-                    
-                    <div class="h-px w-full bg-white/10 mb-4"></div>
 
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 auto-rows-fr">
+                <div class="card flex flex-col p-8">
+                    <p class="rating mb-6">★★★★★</p>
+
+                    <p class="rating-text flex-1">
+                        “Our members are extremely impressed. It’s intuitive, clean, and perfectly suited for building a growing online community.”
+                    </p>
+
+                    <div class="line-divider my-4"></div>
+                    
                     <div class="flex gap-4 items-center">
-                        <img src="assets/person1.jpg" class="w-12 h-12 rounded-full object-cover" alt="person 1">
+                        <img src="assets/person1.jpg" class="icon-round-xl" alt="person 1">
                         <div>
-                            <p class="font-semibold text-white">Musharof Chy</p>
-                            <p class="text-sm text-white/60">Founder @TailGrids</p>
+                            <p class="p-header">Musharof Chy</p>
+                            <p class="p-details">Founder @TailGrids</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-tailkit-card-layout rounded-xl p-8 flex flex-col mx-12 md:mx-0">
-                    <div class="text-yellow-400 tracking-widest mb-6">★★★★★</div>
-                    <p class="text-base text-white/80 min-h-[72px] md:min-h-[120px] lg:flex-1">
-                        “Beautifully designed and very flexible. Helped us build our product landing page quickly.”   
+                <div class="card flex flex-col p-8">
+                    <p class="rating mb-6">★★★★★</p>
+
+                    <p class="rating-text flex-1">
+                        “Beautifully designed and highly flexible. It helped us launch our product landing page faster without sacrificing quality.”
                     </p>
+
+                    <div class="line-divider my-4"></div>
                     
-                    <div class="h-px w-full bg-white/10 mb-4"></div>
-                        <div class="flex gap-4 items-center">
-                        <img src="assets/person2.jpg" class="w-12 h-12 rounded-full object-cover" alt="person 2">
+                    <div class="flex gap-4 items-center">
+                        <img src="assets/person2.jpg" class="icon-round-xl" alt="person 2">
                         <div>
-                            <p class="font-semibold text-white">Devid Weilium</p>
-                            <p class="text-sm text-white/60">Founder @UIdeck</p>
+                            <p class="p-header">Devid Weilium</p>
+                            <p class="p-details">Founder @UIdeck</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-tailkit-card-layout rounded-xl p-8 flex flex-col mx-12 md:mx-0">
-                    <div class="text-yellow-400 tracking-widest mb-6">★★★★★</div>
-                    <p class="text-base text-white/80 min-h-[72px] md:min-h-[120px] lg:flex-1">
-                        “This template is a game-changer for startups and agencies alike.”
+                <div class="card flex flex-col p-8">
+                    <p class="rating mb-6">★★★★★</p>
+
+                    <p class="rating-text flex-1">
+                        “This template is truly a game-changer for startups and agencies looking to build modern, professional websites.”
                     </p>
+
+                    <div class="line-divider my-4"></div>
                     
-                    <div class="h-px w-full bg-white/10 mb-4"></div>
-                        <div class="flex gap-4 items-center">
-                        <img src="assets/person3.jpg" class="w-12 h-12 rounded-full object-cover" alt="person 3">
+                    <div class="flex gap-4 items-center">
+                        <img src="assets/person3.jpg" class="icon-round-xl" alt="person 3">
                         <div>
-                            <p class="font-semibold text-white">Lethium Frenci</p>
-                            <p class="text-sm text-white/60">Founder @Lineicons</p>
+                            <p class="p-header">Lethium Frenci</p>
+                            <p class="p-details">Founder @Lineicons</p>
                         </div>
                     </div>
                 </div>
